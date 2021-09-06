@@ -1,31 +1,13 @@
 body {
   font-family: "Montserrat";
-}
-
-#title {
-  background-color: #ff4c68;
-  color: #fff;
+  text-align: center;
 }
 
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
-
-h1 {
-  font-family: "Montserrat";
-  font-size: 3.25rem;
-  line-height: 1.5;
-  font-weight: 900;
-}
-
-h2 {
-  font-family: "Montserrat";
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: 700;
-}
-
-h3 {
+ 
+h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
   font-weight: 700;
 }
@@ -34,6 +16,26 @@ p {
   color: #8f8f8f;
 }
 
+.big-heading {
+  font-family: "Montserrat";
+  font-size: 3.25rem;
+  line-height: 1.5;
+  font-weight: 900;
+ }
+
+ .section-heading{
+   font-size: 3rem;
+   line-height: 1.5;
+ }
+ 
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+} 
+
+.white-section {
+  background-color: #fff;
+}
 /* navigative bar */
 
 .navbar-brand {
@@ -56,6 +58,17 @@ p {
   margin: 5% 3% 5% 0;
 }
 
+
+/* Title Section */
+
+#title {
+  text-align: left;
+} 
+
+#title .container-fluid{
+  padding: 3% 15% 5%;
+}
+
 /* Title image */
 
 .iphone-img {
@@ -68,13 +81,14 @@ p {
 /* Feature Sections */
 
 #features {
-  padding: 7% 15%;
-  background-color: #fff;
   position: relative;
 }
 
+.feature-title {
+  font-size: 1.5rem;
+}
+
 .feature-box {
-  text-align: center;
   padding: 4%;
 }
 
@@ -89,13 +103,12 @@ p {
 /* Testimonials Section */
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
-  color: #fff;
 }
 
-.carousel-item {
-  padding: 7% 15%;
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-img {
@@ -106,7 +119,6 @@ p {
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -119,9 +131,37 @@ p {
 
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
   padding: 3% 2%;
 }
+
+/* CTA Sections */
+
+
+
+ /* Footer Sections */
+
+.social-icon {
+  padding: 20px 10px;
+}
+
+@media (max-width: 1028px){
+
+  #title{
+    text-align: center;
+  }
+
+  .iphone-img{
+    position: static;
+    transform: rotate(0);
+  }
+
+}
+
